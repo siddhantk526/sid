@@ -1,0 +1,46 @@
+<html>
+
+<head>
+    <title>MAth operations</title>
+    <script>
+        function f1(choice) {
+            let n1 = parseInt(document.getElementById("t1").value)
+            let result
+            switch (choice) {
+                case "sq":
+                    result = n1 * n1
+                    break;
+
+                case "cu":
+                    result = n1 * n1 * n1
+                    break;
+
+                case "as":
+                    result = n1
+                    break;
+            }
+            document.getElementById("p1").innerHTML = `<h1>${n1}=${result}</h1>`
+
+        }
+
+
+
+    </script>
+</head>
+
+<body>
+    <label for="t1">number</label>
+    <input type="number" id="t1">
+
+    <input type="radio" id="sq" onclick="f1('sq')" name="op" value="sq">square</input>
+    <input type="radio" id="cu" onclick="f1('cu')" name="op" value="cu">cube</input>
+    <input type="radio" id="as" onclick="f1('as')" name="op" value="as">as it is</input>
+    <iframe src="C:\wpt\05 may\ex1.html" frameborder="0"></iframe>
+
+    <h1 id="p1"></h1>
+</body>
+
+
+
+
+</html>
